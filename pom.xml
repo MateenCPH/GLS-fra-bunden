@@ -12,6 +12,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <jackson.version>2.15.0</jackson.version>
         <lombok.version>1.18.28</lombok.version>
         <hibernate.version>6.2.4.Final</hibernate.version>
@@ -20,6 +21,7 @@
         <hamcrest.version>2.0.0.0</hamcrest.version>
         <testcontainers.version>1.18.0</testcontainers.version>
         <hikari.version>5.1.0</hikari.version>
+        <logback.version>1.5.7</logback.version>
 
         <!-- DATABASE PROJECT NAME ON SERVER  -->
         <db.name>jpademo</db.name>
@@ -109,6 +111,12 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
     </dependencies>
     <build>
